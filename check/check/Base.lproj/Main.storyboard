@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ayw-m4-nXy">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lbd-GC-Ej9">
+            <objects>
+                <viewController id="Ayw-m4-nXy" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csv-5F-PWM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yf3-pE-kDp">
+                                <rect key="frame" x="50" y="356" width="220" height="166"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Show entered text here">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="21"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="3.7999999999999998" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0R-s3-hBk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                <color key="backgroundColor" red="0.48148714479999999" green="0.76165803109999997" blue="0.1042746896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="kBV-71-nVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter text here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-UT-6X4">
+                                <rect key="frame" x="0.0" y="137" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.034675166899999998" green="0.27979274609999999" blue="0.072814071669999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOF-db-5Sy">
+                                <rect key="frame" x="99" y="264" width="121" height="42"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="IDV-qr-AZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="SHOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTextButton:" destination="Ayw-m4-nXy" eventType="touchUpInside" id="nIl-LM-IVW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="Enter text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zp-RB-cgx">
+                                <rect key="frame" x="64" y="166" width="192" height="35"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ctG-jL-4Gs"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yf3-pE-kDp" firstAttribute="top" secondItem="mOF-db-5Sy" secondAttribute="bottom" constant="50" id="2p5-td-Yom"/>
+                            <constraint firstItem="UGh-HP-AEb" firstAttribute="trailing" secondItem="yf3-pE-kDp" secondAttribute="trailing" constant="50" id="3DM-gB-bt5"/>
+                            <constraint firstItem="mOF-db-5Sy" firstAttribute="top" secondItem="1zp-RB-cgx" secondAttribute="bottom" constant="63" id="4bV-QE-If9"/>
+                            <constraint firstItem="UGh-HP-AEb" firstAttribute="trailing" secondItem="4Eo-UT-6X4" secondAttribute="trailing" id="8cz-6z-TuR"/>
+                            <constraint firstItem="O0R-s3-hBk" firstAttribute="top" secondItem="csv-5F-PWM" secondAttribute="top" id="Dx6-hk-CPQ"/>
+                            <constraint firstItem="4Eo-UT-6X4" firstAttribute="top" secondItem="O0R-s3-hBk" secondAttribute="bottom" constant="62" id="Ouu-AS-rp1"/>
+                            <constraint firstItem="UGh-HP-AEb" firstAttribute="trailing" secondItem="mOF-db-5Sy" secondAttribute="trailing" constant="100" id="Qn7-wi-QEO"/>
+                            <constraint firstItem="UGh-HP-AEb" firstAttribute="bottom" secondItem="yf3-pE-kDp" secondAttribute="bottom" constant="46" id="Wva-zW-3Ys"/>
+                            <constraint firstItem="O0R-s3-hBk" firstAttribute="leading" secondItem="UGh-HP-AEb" secondAttribute="leading" id="Wzu-Ee-JpB"/>
+                            <constraint firstItem="yf3-pE-kDp" firstAttribute="leading" secondItem="UGh-HP-AEb" secondAttribute="leading" constant="50" id="Yxh-MT-pwN"/>
+                            <constraint firstItem="UGh-HP-AEb" firstAttribute="trailing" secondItem="1zp-RB-cgx" secondAttribute="trailing" constant="64" id="ag8-MQ-9lo"/>
+                            <constraint firstItem="O0R-s3-hBk" firstAttribute="trailing" secondItem="UGh-HP-AEb" secondAttribute="trailing" id="dCD-TW-Uk6"/>
+                            <constraint firstItem="mOF-db-5Sy" firstAttribute="leading" secondItem="UGh-HP-AEb" secondAttribute="leading" constant="99" id="dxc-So-bXQ"/>
+                            <constraint firstItem="1zp-RB-cgx" firstAttribute="top" secondItem="4Eo-UT-6X4" secondAttribute="bottom" constant="-1" id="ewQ-hX-Kpa"/>
+                            <constraint firstItem="1zp-RB-cgx" firstAttribute="leading" secondItem="UGh-HP-AEb" secondAttribute="leading" constant="64" id="gqj-7z-VPb"/>
+                            <constraint firstItem="4Eo-UT-6X4" firstAttribute="leading" secondItem="UGh-HP-AEb" secondAttribute="leading" id="zuE-20-Vjs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UGh-HP-AEb"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterText" destination="1zp-RB-cgx" id="CVc-wH-HcS"/>
+                        <outlet property="viewText" destination="yf3-pE-kDp" id="7Ty-iR-9g1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xe-8p-cSb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="116.25"/>
+        </scene>
+    </scenes>
+</document>
